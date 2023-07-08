@@ -6,13 +6,14 @@ COPY pyproject.toml poetry.lock ./
 
 RUN pip install poetry && \
     poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi --only main
+    poetry install --no-ansi  --no-interaction --only main
 
-EXPOSE 80
 
 COPY . .
 
 RUN chmod +x docker-entrypoint.sh
+
+EXPOSE 8000
 
 ENTRYPOINT ["/app/docker-entrypoint.sh"]
 CMD ["server"]

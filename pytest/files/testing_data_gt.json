@@ -1,0 +1,120 @@
+{
+  "sentences": [
+    {
+      "trans": "интересный",
+      "orig": "interesting",
+      "backend": 10
+    }
+  ],
+  "dict": [
+    {
+      "pos": "adjective",
+      "terms": [
+        "интересный",
+        "занятный"
+      ],
+      "entry": [
+        {
+          "word": "интересный",
+          "reverse_translation": [
+            "interesting",
+            "sapid",
+            "readable",
+            "cunning",
+            "nutty",
+            "sipid"
+          ],
+          "score": 0.16842748
+        },
+        {
+          "word": "занятный",
+          "reverse_translation": [
+            "amusing",
+            "interesting"
+          ],
+          "score": 1.07220294E-4
+        }
+      ],
+      "base_form": "interesting",
+      "pos_enum": 3
+    }
+  ],
+  "src": "en",
+  "spell": {},
+  "synsets": [
+    {
+      "pos": "adjective",
+      "entry": [
+        {
+          "synonym": [
+            "absorbing",
+            "engrossing",
+            "fascinating",
+            "riveting",
+            "gripping",
+            "compelling",
+            "compulsive",
+            "spellbinding",
+            "captivating",
+            "engaging",
+            "enthralling",
+            "entrancing",
+            "beguiling",
+            "appealing",
+            "attractive",
+            "amusing",
+            "entertaining",
+            "stimulating",
+            "thought-provoking",
+            "diverting",
+            "exciting",
+            "intriguing",
+            "action-packed"
+          ],
+          "definition_id": "m_en_gbus0515620.005"
+        },
+        {
+          "synonym": [
+            "unputdownable"
+          ],
+          "definition_id": "m_en_gbus0515620.005",
+          "label_info": {
+            "register": [
+              "informal"
+            ]
+          }
+        }
+      ],
+      "base_form": "interesting",
+      "pos_enum": 3
+    }
+  ],
+  "definitions": [
+    {
+      "pos": "adjective",
+      "entry": [
+        {
+          "gloss": "arousing curiosity or interest; holding or catching the attention.",
+          "definition_id": "m_en_gbus0515620.005",
+          "example": "an interesting debate"
+        }
+      ],
+      "base_form": "interesting",
+      "pos_enum": 3
+    }
+  ],
+  "examples": {
+    "example": [
+      {
+        "text": "it will be very <b>interesting</b> to see what they come up with",
+        "source_type": 3,
+        "definition_id": "m_en_gbus0515620.005"
+      },
+      {
+        "text": "an <b>interesting</b> debate",
+        "source_type": 3,
+        "definition_id": "m_en_gbus0515620.005"
+      }
+    ]
+  }
+}

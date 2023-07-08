@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-MAX_REQUESTS=${MAX_REQUESTS:-200}
-MAX_REQUESTS_JITTER=${MAX_REQUESTS_JITTER:-40}
+MAX_REQUESTS=${MAX_REQUESTS:-100}
+MAX_REQUESTS_JITTER=${MAX_REQUESTS_JITTER:-50}
 
 GUNICORN_ARGS=(
     -b 0.0.0.0:5000
@@ -12,7 +12,6 @@ GUNICORN_ARGS=(
     --max-requests-jitter ${MAX_REQUESTS_JITTER}
     --timeout 120
     --worker-class uvicorn.workers.UvicornWorker
-    -c app/utils/gunicorn.conf.py
     wsgi:app
 )
 
@@ -23,24 +22,10 @@ server() {
 }
 
 
-tests() {
-  sed -i s/DB_HOST=.*/DB_HOST=postgres/g pytest.ini
-  sed -i s/DB_PORT=.*/DB_PORT=5432/g pytest.ini
-  sed -i s/REDIS_HOST=.*/REDIS_HOST=redis/g pytest.ini
-  sed -i s/REDIS_PORT=.*/REDIS_PORT=6379/g pytest.ini
-  poetry install --no-interaction --no-ansi --with test
-  pytest -x
-}
-
-
 case "$1" in
   server)
     shift
     server
-    ;;
-  tests)
-    shift
-    tests
     ;;
   *)
     exec "$@"

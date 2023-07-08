@@ -1,7 +1,5 @@
-pytest
 .pytest_cache
 pytest.ini
-*.yml
 .idea
 *.iml
 *.http

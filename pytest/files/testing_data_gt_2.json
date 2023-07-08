@@ -1,0 +1,197 @@
+{
+  "sentences": [
+    {
+      "trans": "привлекательный",
+      "orig": "appealing",
+      "backend": 10
+    }
+  ],
+  "dict": [
+    {
+      "pos": "adjective",
+      "terms": [
+        "привлекательный",
+        "умоляющий",
+        "подкупающий",
+        "трогательный"
+      ],
+      "entry": [
+        {
+          "word": "привлекательный",
+          "reverse_translation": [
+            "attractive",
+            "appealing",
+            "engaging",
+            "inviting",
+            "lovable",
+            "catching"
+          ],
+          "score": 0.14863673
+        },
+        {
+          "word": "умоляющий",
+          "reverse_translation": [
+            "appealing",
+            "pleading",
+            "begging",
+            "imploring",
+            "beseeching",
+            "supplicant"
+          ],
+          "score": 0.013611027
+        },
+        {
+          "word": "подкупающий",
+          "reverse_translation": [
+            "appealing"
+          ],
+          "score": 2.0667253E-4
+        },
+        {
+          "word": "трогательный",
+          "reverse_translation": [
+            "touching",
+            "moving",
+            "heartwarming",
+            "pathetic",
+            "affecting",
+            "appealing"
+          ],
+          "score": 1.234098E-4
+        }
+      ],
+      "base_form": "appealing",
+      "pos_enum": 3
+    }
+  ],
+  "src": "en",
+  "spell": {},
+  "synsets": [
+    {
+      "pos": "adjective",
+      "entry": [
+        {
+          "synonym": [
+            "attractive",
+            "engaging",
+            "alluring",
+            "enchanting",
+            "captivating",
+            "bewitching",
+            "fascinating",
+            "winning",
+            "winsome",
+            "likable",
+            "lovable",
+            "charming",
+            "delightful",
+            "beautiful",
+            "pretty",
+            "good-looking",
+            "prepossessing",
+            "striking",
+            "fetching",
+            "delectable",
+            "desirable",
+            "irresistible",
+            "bonny"
+          ],
+          "definition_id": "m_en_gbus0041440.006"
+        },
+        {
+          "synonym": [
+            "tasty"
+          ],
+          "definition_id": "m_en_gbus0041440.006",
+          "label_info": {
+            "register": [
+              "informal"
+            ]
+          }
+        },
+        {
+          "synonym": [
+            "taking"
+          ],
+          "definition_id": "m_en_gbus0041440.006",
+          "label_info": {
+            "register": [
+              "dated"
+            ]
+          }
+        },
+        {
+          "synonym": [
+            "inviting",
+            "attractive",
+            "tempting",
+            "appetizing",
+            "enticing",
+            "seductive",
+            "agreeable",
+            "to one's liking",
+            "pleasant",
+            "pleasing",
+            "pleasurable",
+            "interesting",
+            "intriguing",
+            "irresistible"
+          ],
+          "definition_id": "m_en_gbus0041440.006"
+        },
+        {
+          "synonym": [
+            "juicy",
+            "sexy"
+          ],
+          "definition_id": "m_en_gbus0041440.006",
+          "label_info": {
+            "register": [
+              "informal"
+            ]
+          }
+        }
+      ],
+      "base_form": "appealing",
+      "pos_enum": 3
+    }
+  ],
+  "definitions": [
+    {
+      "pos": "adjective",
+      "entry": [
+        {
+          "gloss": "attractive or interesting.",
+          "definition_id": "m_en_gbus0041440.006",
+          "example": "the rural life is somehow more appealing"
+        },
+        {
+          "gloss": "(of an expression or tone of voice) showing that one wants help or sympathy.",
+          "definition_id": "m_en_gbus0041440.009",
+          "example": "an appealing look"
+        }
+      ],
+      "base_form": "appealing",
+      "pos_enum": 3
+    }
+  ],
+  "examples": {
+    "example": [
+      {
+        "text": "an <b>appealing</b> young woman",
+        "source_type": 3,
+        "definition_id": "m_en_gbus0041440.006"
+      },
+      {
+        "text": "an <b>appealing</b> look",
+        "source_type": 3,
+        "definition_id": "m_en_gbus0041440.009"
+      },
+      {
+        "text": "the rural life is somehow more <b>appealing</b>",
+        "source_type": 3,
+        "definition_id": "m_en_gbus0041440.006"
+      }
+    ]
+  }
+}

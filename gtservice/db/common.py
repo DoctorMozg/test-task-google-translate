@@ -1,7 +1,7 @@
 import enum
-from sqlalchemy import Enum, MetaData
+from sqlalchemy import Enum
 from sqlalchemy.ext.asyncio import AsyncAttrs
-from sqlalchemy.orm import declarative_base, DeclarativeBase
+from sqlalchemy.orm import DeclarativeBase
 
 
 class Actuality(enum.Enum):
@@ -21,4 +21,3 @@ DbActuality = Enum(Actuality, name='actuality', values_callable=_get_enum_values
 
 class Base(AsyncAttrs, DeclarativeBase):
     pass
-

@@ -1,0 +1,14 @@
+services:
+  test-google-translate:
+    image: test-google-translate:latest
+    restart: always
+    environment:
+      MAX_REQUESTS: "${MAX_REQUESTS}"
+      MAX_REQUESTS_JITTER: "${MAX_REQUESTS_JITTER}"
+      WEB_WORKERS: "${WEB_WORKERS}"
+      LOG_LEVEL: "${LOG_LEVEL}"
+      DB_CONNECTION_STRING: "${DB_CONNECTION_STRING}"
+      DB_MAX_OVERFLOW: "${DB_MAX_OVERFLOW}"
+      DB_POOL_SIZE: "${DB_POOL_SIZE}"
+    ports:
+      - "8000":"8000"

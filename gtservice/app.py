@@ -1,7 +1,7 @@
 import logging
 import time
 
-from fastapi import FastAPI, Request, Response
+from fastapi import FastAPI, Request
 
 from gtservice import settings
 
@@ -26,11 +26,17 @@ def init_middleware(app: FastAPI):
             logger.info(f'Request has ended. Elapsed time: {time.monotonic() - start}')
 
 
+def init_routers(app: FastAPI):
+    from gtservice.api.translations import router as words_router
+    app.include_router(router=words_router)
+
+
 def create_application():
     prepare_logger()
 
     app = FastAPI(title="Google Translate Service")
 
     init_middleware(app)
+    init_routers(app)
 
     return app
